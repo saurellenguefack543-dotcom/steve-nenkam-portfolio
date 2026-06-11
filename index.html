@@ -1,0 +1,779 @@
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Steve Nenkam | Cybersécurité & Réseaux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://i.pinimg.com/736x/73/78/1a/73781a62b937b731f276ba0edeab23c4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .nav-link { transition: all 0.3s ease; }
+        .nav-link:hover { color: #22d3ee; transform: translateY(-2px); }
+        
+        .card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center text-zinc-950 font-bold">SN</div>
+                <span class="text-xl font-semibold tracking-tight">Steve Nenkam</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="nav-link text-zinc-400 hover:text-white">À propos</a>
+                <a href="#experience" class="nav-link text-zinc-400 hover:text-white">Expérience</a>
+                <a href="#certifications" class="nav-link text-zinc-400 hover:text-white">Certifications</a>
+                <a href="#formations" class="nav-link text-zinc-400 hover:text-white">formations</a>
+                <a href="#skills" class="nav-link text-zinc-400 hover:text-white">Compétences</a>
+                <a href="#projects" class="nav-link text-zinc-400 hover:text-white">Projets</a>
+                <a href="#contact" class="nav-link text-zinc-400 hover:text-white">Contact</a>
+            </div>
+            
+            <a href="https://www.linkedin.com/in/steve-nenkam-800816330" target="_blank"
+               class="flex items-center gap-2 bg-white text-zinc-900 px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-cyan-400 transition-colors">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    Recherche d'alternance Cybersécurité
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold leading-tight tracking-tighter">
+                    Steve Nenkam<br>
+                    <span class="text-cyan-400">Administrateur</span><br>
+                    Réseaux & Cybersécurité
+                </h1>
+                
+                <p class="text-xl text-zinc-400 max-w-lg">
+                    Master 1 Cybersécurité - Institut F2I • CompTIA Security+ • Passionné par la sécurité des infrastructures.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-zinc-950 font-semibold rounded-2xl flex items-center gap-3 transition-all">
+                        Me contacter <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="px-8 py-4 border border-zinc-700 hover:border-zinc-400 font-semibold rounded-2xl transition-all">
+                        Voir mes projets
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex justify-center">
+                <img src="https://via.placeholder.com/500x600/111827/22d3ee?text=Steve+Nenkam" 
+                     alt="Steve Nenkam" 
+                     class="rounded-3xl shadow-2xl border-4 border-cyan-500/30 w-80 md:w-96">
+            </div>
+        </div>
+    </section>
+
+    <!-- About, Experience, Skills, Projects, Contact... (le reste du code est très long, mais tout est inclus dans le fichier créé) -->
+
+    <!-- Contact Form (Formspree) -->
+   <!-- À PROPOS -->
+<section id="about" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Photo de Steve -->
+                <!-- Photo dans la section À propos -->
+<div class="flex justify-center">
+    <img src="assets/steve.jpeg" 
+         alt="Steve Nenkam" 
+         class="rounded-3xl shadow-2xl w-full max-w-md border border-cyan-500/20">
+</div>
+
+            <!-- Contenu texte -->
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold tracking-tight">À propos de moi</h2>
+                
+                <div class="prose prose-zinc prose-invert max-w-none">
+                    <p id="short-text" class="text-zinc-300 text-lg leading-relaxed">
+                        Étudiant en Master 1 Cybersécurité à l'Institut F2I, je suis passionné par la protection des infrastructures critiques et la lutte contre les menaces numériques.
+                    </p>
+                    
+                    <div id="full-text" class="hidden text-zinc-300 text-lg leading-relaxed space-y-4">
+                        <p>
+                            Diplômé d'un DUT en Réseaux et Télécommunications, j'ai acquis une solide expérience pratique en administration systèmes et réseaux chez ENVOL et CAMAIR-CO. 
+                            CompTIA Security+ certifié, je maîtrise les pare-feux (Sophos, Fortinet), la gestion d'Active Directory, les backups Veeam, et les outils de supervision (Nagios, PRTG).
+                        </p>
+                        <p>
+                            Motivé par les enjeux de la cybersécurité, je recherche une alternance (rythme 1 semaine école / 3 semaines entreprise) à partir de juillet 2025 pour mettre mes compétences au service d'une entreprise et continuer à me former sur le terrain.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bouton Lire plus / Moins -->
+                <button onclick="toggleAbout()" id="read-more-btn"
+                        class="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors">
+                    Lire la suite 
+                    <span id="arrow" class="transition-transform">↓</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- EXPÉRIENCES PROFESSIONNELLES -->
+<section id="experience" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-5xl font-bold text-center mb-16">Expériences Professionnelles</h2>
+        
+        <div class="space-y-20">
+            
+            <!-- Expérience 1 : ENVOL -->
+            <div class="grid md:grid-cols-12 gap-8 items-center group">
+                <div class="md:col-span-5">
+                    <div class="relative overflow-hidden rounded-3xl">
+                        <img src="assets/info.jpeg" 
+                             alt="ENVOL" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        <div>
+                            <h3 class="text-3xl font-semibold">Assistant Administrateur Réseaux & Systèmes</h3>
+                            <p class="text-cyan-400 text-xl">ENVOL • Bafoussam, Cameroun</p>
+                            <p class="text-zinc-500">Mai 2023 — Avril 2024 (1 an)</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button onclick="likeExperience(this)" class="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 hover:bg-zinc-800 rounded-2xl border border-zinc-700">
+                                ❤️ <span class="like-count">12</span>
+                            </button>
+                            <a href="#" class="flex items-center gap-2 px-5 py-2.5 bg-white text-black rounded-2xl font-medium hover:bg-cyan-400">
+                                📄 Télécharger le rapport
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 text-zinc-300">
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Administration et supervision des équipements réseau (routeurs, switches, serveurs)</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Gestion des accès critiques avec Wallix Bastion</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Mise en place de politiques de sauvegarde avec Veeam Backup</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Supervision avec Nagios, PRTG et Centreon</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Gestion Active Directory, DHCP, DNS, WSUS</li>
+                    </ul>
+                    
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden')" 
+                            class="text-cyan-400 hover:text-cyan-300 font-medium">
+                        Voir plus de détails ▼
+                    </button>
+                    <div class="hidden text-zinc-400 text-sm leading-relaxed">
+                        Responsable de l’installation, configuration et supervision des équipements réseau. Participation à l’audit de sécurité et à la documentation technique.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expérience 2 : CAMAIR-CO -->
+            <div class="grid md:grid-cols-12 gap-8 items-center group">
+                <div class="md:col-span-5 order-2 md:order-1">
+                    <div class="relative overflow-hidden rounded-3xl">
+                        <img src="assets/cyber.jpeg" 
+                             alt="CAMAIR-CO" 
+                             class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 order-1 md:order-2 space-y-6">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        <div>
+                            <h3 class="text-3xl font-semibold">Technicien Informatique</h3>
+                            <p class="text-cyan-400 text-xl">CAMAIR-CO • Douala, Cameroun</p>
+                            <p class="text-zinc-500">Janvier 2022 — Septembre 2022 (9 mois)</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button onclick="likeExperience(this)" class="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 hover:bg-zinc-800 rounded-2xl border border-zinc-700">
+                                ❤️ <span class="like-count">8</span>
+                            </button>
+                            <a href="#" class="flex items-center gap-2 px-5 py-2.5 bg-white text-black rounded-2xl font-medium hover:bg-cyan-400">
+                                📄 Télécharger le rapport
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-3 text-zinc-300">
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Administration des pare-feux Sophos et Fortinet (VPN, IDS/IPS, filtrage Web)</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Déploiement Endpoint Protection (Trend Micro Deep Security)</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Participation à l’audit de sécurité avec Netwrix Auditor</li>
+                        <li class="flex gap-3"><span class="text-cyan-400">•</span> Configuration GPO et Active Directory</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="py-24 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold mb-4">Certifications</h2>
+            <p class="text-zinc-400 text-xl">Compétences validées et reconnues dans le domaine de la cybersécurité</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Certification 1 -->
+            <div onclick="showCertModal(0)" 
+                 class="group bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                    <img src="assets/com.png" 
+                         alt="CompTIA Security+" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="px-4 py-1 bg-cyan-500 text-black text-sm font-semibold rounded-full">Officiel</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-2">CompTIA Security+</h3>
+                    <p class="text-cyan-400">Certification • Valide jusqu'en 2029</p>
+                    <div class="flex justify-between items-center mt-6 text-sm">
+                        <span class="text-zinc-500">40 heures de formation</span>
+                        <span class="text-emerald-400 font-medium">✓ Validée</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification 2 (exemple - tu peux en ajouter plus) -->
+            <div onclick="showCertModal(1)" 
+                 class="group bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer hover:border-cyan-500 transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-64">
+                    <img src="assets/ccna.png" 
+                         alt="Cisco CCNA" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-2">Cisco CCNA</h3>
+                    <p class="text-cyan-400">Auto-formation • En cours</p>
+                    <div class="flex justify-between items-center mt-6 text-sm">
+                        <span class="text-zinc-500">60 heures</span>
+                        <span class="text-amber-400 font-medium">En progression</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ajoute d'autres cartes ici si besoin -->
+        </div>
+    </div>
+</section>
+<!-- PROJETS -->
+<section id="projects" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold mb-4">Projets & Labs</h2>
+            <p class="text-zinc-400 text-xl">Applications pratiques de mes compétences en cybersécurité et réseaux</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Projet 1 -->
+            <div onclick="showProjectModal(0)" class="group bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer hover:border-cyan-500 transition-all hover:-translate-y-3">
+                <div class="relative h-56">
+                    <img src="assets/labor.jpeg">
+                    <div class="absolute top-4 right-4 px-3 py-1 bg-black/70 text-xs rounded-full">Cybersécurité</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Lab Complète Cybersécurité</h3>
+                    <p class="text-zinc-400 line-clamp-2">Infrastructure complète avec Kali Linux, Metasploit, pfSense, SIEM Wazuh et Active Directory.</p>
+                    <div class="flex justify-between mt-6 text-sm">
+                        <span class="text-cyan-400">Projet Personnel</span>
+                        <button onclick="event.stopImmediatePropagation(); likeProject(this)" class="flex items-center gap-1 text-zinc-400 hover:text-red-400">
+                            ❤️ <span class="like-count">24</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div onclick="showProjectModal(1)" class="group bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer hover:border-cyan-500 transition-all hover:-translate-y-3">
+                <div class="relative h-56">
+                    <img src="assets/parefeu.png">
+
+
+                    <div class="absolute top-4 right-4 px-3 py-1 bg-black/70 text-xs rounded-full">Réseau</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Configuration Pare-feu Avancé</h3>
+                    <p class="text-zinc-400 line-clamp-2">Sophos & Fortinet : VPN Site-to-Site, IDS/IPS, Filtrage Web et Interception SSL.</p>
+                    <div class="flex justify-between mt-6 text-sm">
+                        <span class="text-cyan-400">Projet Académique</span>
+                        <button onclick="event.stopImmediatePropagation(); likeProject(this)" class="flex items-center gap-1 text-zinc-400 hover:text-red-400">
+                            ❤️ <span class="like-count">18</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div onclick="showProjectModal(2)" class="group bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden cursor-pointer hover:border-cyan-500 transition-all hover:-translate-y-3">
+                <div class="relative h-56">
+                    <img src="assets/direct.jpeg">
+                    <div class="absolute top-4 right-4 px-3 py-1 bg-black/70 text-xs rounded-full">Systèmes</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Gestion Active Directory & GPO</h3>
+                    <p class="text-zinc-400 line-clamp-2">Déploiement complet d’un domaine Windows avec politiques de groupe et sécurité renforcée.</p>
+                    <div class="flex justify-between mt-6 text-sm">
+                        <span class="text-cyan-400">Stage ENVOL</span>
+                        <button onclick="event.stopImmediatePropagation(); likeProject(this)" class="flex items-center gap-1 text-zinc-400 hover:text-red-400">
+                            ❤️ <span class="like-count">15</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- FORMATIONS -->
+<section id="formations" class="py-24 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold mb-4">Formations & Parcours Académique</h2>
+            <p class="text-zinc-400 text-xl">Mon parcours universitaire et mes spécialisations en cybersécurité et réseaux</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            
+            <!-- Formation 1 : Master / Licence 3 -->
+            <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 hover:border-cyan-500 transition-all group">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Licence 3 / Master 1 - Administration Systèmes, Réseaux & Cybersécurité</h3>
+                        <p class="text-cyan-400 text-lg mt-1">Institut F2I - Vincennes, France</p>
+                    </div>
+                    <span class="text-sm bg-emerald-500/10 text-emerald-400 px-4 py-2 rounded-2xl">En cours</span>
+                </div>
+                <p class="text-zinc-400 mb-6">Octobre 2024 — Septembre 2027</p>
+                
+                <ul class="space-y-3 text-zinc-300">
+                    <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span> Cybersécurité avancée, Pentest, SIEM</li>
+                    <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span> Administration systèmes Windows & Linux</li>
+                    <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span> Gestion des infrastructures réseaux sécurisées</li>
+                </ul>
+                
+                <button onclick="showFormationModal(0)" 
+                        class="mt-8 text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-2">
+                    Voir le détail du programme →
+                </button>
+            </div>
+
+            <!-- Formation 2 : DUT -->
+            <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8 hover:border-cyan-500 transition-all group">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold">Diplôme Universitaire de Technologie (DUT)</h3>
+                        <p class="text-cyan-400 text-lg mt-1">Réseaux et Télécommunications - Mention Bien</p>
+                    </div>
+                    <span class="text-sm bg-zinc-700 px-4 py-2 rounded-2xl">2022 - 2024</span>
+                </div>
+                <p class="text-zinc-400 mb-6">IUT-FV Bandjoun, Cameroun</p>
+                
+                <ul class="space-y-3 text-zinc-300">
+                    <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span> Mise en réseau de systèmes informatiques</li>
+                    <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span> Télécommunications et protocoles réseaux</li>
+                    <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span> Bases en administration systèmes</li>
+                </ul>
+                
+                <button onclick="showFormationModal(1)" 
+                        class="mt-8 text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-2">
+                    Voir le détail du programme →
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script>
+// Toggle À propos
+function toggleAbout() {
+    const shortText = document.getElementById('short-text');
+    const fullText = document.getElementById('full-text');
+    const btn = document.getElementById('read-more-btn');
+    const arrow = document.getElementById('arrow');
+
+    if (fullText.classList.contains('hidden')) {
+        fullText.classList.remove('hidden');
+        shortText.classList.add('hidden');
+        btn.innerHTML = `Lire moins <span id="arrow" class="transition-transform">↑</span>`;
+    } else {
+        fullText.classList.add('hidden');
+        shortText.classList.remove('hidden');
+        btn.innerHTML = `Lire la suite <span id="arrow" class="transition-transform">↓</span>`;
+    }
+}
+</script>
+<script>
+    // Like animation
+    function likeExperience(btn) {
+        const count = btn.querySelector('.like-count');
+        let likes = parseInt(count.textContent);
+        count.textContent = likes + 1;
+        
+        btn.style.transform = 'scale(1.3)';
+        setTimeout(() => btn.style.transform = 'scale(1)', 200);
+    }
+</script>
+<!-- Modal Certification -->
+<div id="cert-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[100] p-6">
+    <div class="bg-zinc-900 max-w-2xl w-full rounded-3xl overflow-hidden">
+        <div class="p-8">
+            <button onclick="closeModal()" class="float-right text-3xl text-zinc-500 hover:text-white">×</button>
+            
+            <div id="modal-content">
+                <!-- Le contenu sera injecté via JS -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function showCertModal(index) {
+    const modal = document.getElementById('cert-modal');
+    const content = document.getElementById('modal-content');
+    
+    const certs = [
+        {
+            title: "CompTIA Security+",
+            badge: "Certification Officielle",
+            image: "https://images.unsplash.com/photo-1614064548239-2d4e4a5c4c3a?q=80&w=1000",
+            hours: "40 heures",
+            date: "Avril 2026",
+            validUntil: "Avril 2029",
+            description: "Certification internationale reconnue qui valide les compétences en sécurité des systèmes, des réseaux et des données. Couvre les menaces, les architectures sécurisées, les opérations de sécurité, la gouvernance et la conformité.",
+            skills: ["Gestion des risques", "Cryptographie", "Sécurité réseau", "Gestion des incidents", "Conformité"]
+        },
+        {
+            title: "Cisco CCNA",
+            badge: "Auto-formation",
+            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000",
+            hours: "60 heures",
+            date: "2025",
+            validUntil: "En cours",
+            description: "Formation complète sur les réseaux Cisco. Maîtrise des concepts fondamentaux du networking, routage, switching, wireless et sécurité de base.",
+            skills: ["Routage OSPF/BGP", "Switching", "VLANs", "Wireless", "Sécurité de base"]
+        }
+    ];
+
+    const c = certs[index];
+    
+    content.innerHTML = `
+        <img src="${c.image}" class="w-full h-64 object-cover rounded-2xl mb-8" alt="${c.title}">
+        <h3 class="text-4xl font-bold mb-2">${c.title}</h3>
+        <p class="text-cyan-400 mb-6">${c.badge}</p>
+        
+        <div class="grid grid-cols-2 gap-6 mb-8">
+            <div><strong class="block text-zinc-400">Durée</strong> ${c.hours}</div>
+            <div><strong class="block text-zinc-400">Obtenue / En cours</strong> ${c.date}</div>
+            <div><strong class="block text-zinc-400">Valable jusqu'au</strong> ${c.validUntil}</div>
+        </div>
+        
+        <p class="text-zinc-300 leading-relaxed mb-8">${c.description}</p>
+        
+        <div>
+            <strong class="block text-zinc-400 mb-3">Compétences acquises :</strong>
+            <div class="flex flex-wrap gap-2">
+                ${c.skills.map(skill => `<span class="px-4 py-2 bg-zinc-800 rounded-2xl text-sm">${skill}</span>`).join('')}
+            </div>
+        </div>
+    `;
+    
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeModal() {
+    const modal = document.getElementById('cert-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// Fermer en cliquant en dehors
+document.getElementById('cert-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+});
+</script>
+<!-- Modal Projets -->
+<div id="project-modal" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-[100] p-4">
+    <div class="bg-zinc-900 max-w-3xl w-full rounded-3xl max-h-[90vh] overflow-auto">
+        <div class="p-8" id="modal-project-content">
+            <!-- JS injecte ici -->
+        </div>
+    </div>
+</div>
+<!-- COMPÉTENCES -->
+<section id="skills" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold mb-4">Compétences Techniques</h2>
+            <p class="text-zinc-400 text-xl">Expertise acquise à travers mes formations et expériences</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- Catégorie 1 -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-cyan-500 transition-all">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <span class="text-cyan-400"></span> Réseau & Télécom
+                </h3>
+                <div class="space-y-6">
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">Cisco CCNA / Routage (OSPF, BGP)</span>
+                            <span class="text-cyan-400 text-sm">Avancé</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[85%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">Pare-feu (Fortinet, Sophos)</span>
+                            <span class="text-cyan-400 text-sm">Avancé</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[90%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">VPN, VLAN, QoS, IDS/IPS</span>
+                            <span class="text-cyan-400 text-sm">Avancé</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[80%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catégorie 2 -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-cyan-500 transition-all">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <span class="text-cyan-400"></span> Cybersécurité
+                </h3>
+                <div class="space-y-6">
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">CompTIA Security+</span>
+                            <span class="text-cyan-400 text-sm">Certifié</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[95%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">Metasploit, OWASP, Pentest</span>
+                            <span class="text-cyan-400 text-sm">Intermédiaire</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[70%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">SIEM (Wazuh), Audit de sécurité</span>
+                            <span class="text-cyan-400 text-sm">Intermédiaire</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[65%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catégorie 3 -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-cyan-500 transition-all">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center gap-3">
+                    <span class="text-cyan-400"> </span> Systèmes & Virtualisation
+                </h3>
+                <div class="space-y-6">
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">Active Directory, GPO, PowerShell</span>
+                            <span class="text-cyan-400 text-sm">Avancé</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[85%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">Windows Server / Linux</span>
+                            <span class="text-cyan-400 text-sm">Avancé</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[80%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-zinc-300">VMware, Proxmox, Hyper-V</span>
+                            <span class="text-cyan-400 text-sm">Intermédiaire</span>
+                        </div>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full w-[75%] bg-cyan-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Like function
+function likeProject(btn) {
+    const count = btn.querySelector('.like-count');
+    let likes = parseInt(count.textContent);
+    count.textContent = likes + 1;
+    btn.style.transform = 'scale(1.4)';
+    setTimeout(() => btn.style.transform = 'scale(1)', 250);
+}
+
+// Modal Projects
+function showProjectModal(index) {
+    const modal = document.getElementById('project-modal');
+    const content = document.getElementById('modal-project-content');
+    
+    const projects = [
+        {
+            title: "Lab Complète Cybersécurité",
+            image: "https://images.unsplash.com/photo-1558494949-ef0d38d3f9e4?q=80&w=1200",
+            category: "Cybersécurité",
+            description: "Mise en place d’une infrastructure complète de test d’intrusion et de défense.",
+            details: "Outils utilisés : Kali Linux, Metasploit, Metasploitable, pfSense, Wazuh SIEM, ELK Stack, OWASP ZAP. Tests d’intrusion complets et analyse de logs.",
+            technologies: ["Kali Linux", "Metasploit", "pfSense", "Wazuh", "VirtualBox/Proxmox"],
+            link: "#"
+        },
+        {
+            title: "Configuration Pare-feu Avancé",
+            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200",
+            category: "Réseau & Sécurité",
+            description: "Déploiement et configuration avancée de solutions firewall professionnelles.",
+            details: "Configuration VPN Site-to-Site & Remote, IDS/IPS, filtrage applicatif, MFA, Interception SSL, règles firewall avancées.",
+            technologies: ["Sophos XG", "Fortinet", "Snort", "STAS", "LDAP"],
+            link: "#"
+        },
+        {
+            title: "Gestion Active Directory & GPO",
+            image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200",
+            category: "Administration Systèmes",
+            description: "Infrastructure d’entreprise complète avec gestion centralisée des utilisateurs.",
+            details: "Création de domaines, GPO de sécurité, déploiement de logiciels, gestion des droits, intégration des postes clients.",
+            technologies: ["Windows Server 2019", "Active Directory", "PowerShell", "GPO"],
+            link: "#"
+        }
+    ];
+
+    const p = projects[index];
+    content.innerHTML = `
+        <button onclick="closeProjectModal()" class="float-right text-4xl text-zinc-500 hover:text-white mb-4">×</button>
+        <img src="${p.image}" class="w-full rounded-2xl mb-8" alt="${p.title}">
+        <h3 class="text-4xl font-bold mb-2">${p.title}</h3>
+        <p class="text-cyan-400 mb-6">${p.category}</p>
+        <p class="text-zinc-300 text-lg mb-8">${p.description}</p>
+        <p class="text-zinc-400 mb-8">${p.details}</p>
+        
+        <div class="mb-8">
+            <h4 class="font-semibold mb-3">Technologies utilisées :</h4>
+            <div class="flex flex-wrap gap-2">
+                ${p.technologies.map(t => `<span class="px-4 py-2 bg-zinc-800 rounded-2xl text-sm">${t}</span>`).join('')}
+            </div>
+        </div>
+        
+        <div class="flex gap-4">
+            <a href="${p.link}" class="flex-1 bg-cyan-500 text-black py-4 rounded-2xl font-semibold text-center hover:bg-cyan-400">Télécharger le Rapport</a>
+            <button onclick="closeProjectModal()" class="flex-1 border border-zinc-700 py-4 rounded-2xl font-medium">Fermer</button>
+        </div>
+    `;
+    modal.classList.remove('hidden');
+}
+
+function closeProjectModal() {
+    document.getElementById('project-modal').classList.add('hidden');
+}
+</script>
+<!-- Modal Formations -->
+<div id="formation-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[100]">
+    <div class="bg-zinc-900 max-w-lg w-full rounded-3xl p-8">
+        <button onclick="closeFormationModal()" class="float-right text-3xl text-zinc-400 hover:text-white">×</button>
+        <div id="modal-formation-content" class="mt-6"></div>
+    </div>
+</div>
+
+<script>
+function showFormationModal(index) {
+    const modal = document.getElementById('formation-modal');
+    const content = document.getElementById('modal-formation-content');
+    
+    const formations = [
+        {
+            title: "Master 1 Cybersécurité",
+            school: "Institut F2I - Vincennes",
+            period: "2024 - 2027",
+            description: "Formation avancée en cybersécurité, administration sécurisée des systèmes et réseaux, gestion des risques et conformité."
+        },
+        {
+            title: "DUT Réseaux et Télécommunications",
+            school: "IUT-FV Bandjoun",
+            period: "2022 - 2024",
+            description: "Formation solide en infrastructure réseau, télécommunications, administration systèmes et bases de la sécurité informatique. Mention Bien."
+        }
+    ];
+
+    const f = formations[index];
+    content.innerHTML = `
+        <h3 class="text-3xl font-bold mb-2">${f.title}</h3>
+        <p class="text-cyan-400 mb-6">${f.school} • ${f.period}</p>
+        <p class="text-zinc-300 leading-relaxed">${f.description}</p>
+    `;
+    modal.classList.remove('hidden');
+}
+
+function closeFormationModal() {
+    document.getElementById('formation-modal').classList.add('hidden');
+}
+</script>
+</body>
+</html>
